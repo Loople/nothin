@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Gambar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .header {
+            background-color: #333;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .back-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .back-button button {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .back-button button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Galeri Gambar</h1>
+    </div>
+
+    <div class="container">
+        <div class="gallery">
+            <img src="https://source.unsplash.com/random/400x300" alt="Gambar 1">
+            <img src="https://source.unsplash.com/random/401x300" alt="Gambar 2">
+            <img src="https://source.unsplash.com/random/402x300" alt="Gambar 3">
+            <img src="https://source.unsplash.com/random/403x300" alt="Gambar 4">
+            <img src="https://source.unsplash.com/random/404x300" alt="Gambar 5">
+            <img src="https://source.unsplash.com/random/405x300" alt="Gambar 6">
+            <!-- Tambahkan lebih banyak gambar sesuai kebutuhan -->
+        </div>
+    </div>
+
+    <div class="back-button">
+        <button onclick="goBack()">Kembali</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
